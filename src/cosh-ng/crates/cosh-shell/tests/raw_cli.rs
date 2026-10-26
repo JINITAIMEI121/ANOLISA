@@ -36,6 +36,7 @@ mod config;
 #[path = "raw_cli/cosh_core/mod.rs"]
 mod cosh_core;
 #[cfg(target_os = "linux")]
+#[cfg(target_os = "linux")]
 #[path = "raw_cli/daily_terminal.rs"]
 mod daily_terminal;
 #[path = "raw_cli/diagnostics.rs"]
@@ -61,6 +62,7 @@ mod i18n;
 mod log_budget;
 #[path = "raw_cli/memory_hook.rs"]
 mod memory_hook;
+#[cfg(target_os = "linux")]
 #[path = "raw_cli/mode.rs"]
 mod mode;
 #[path = "raw_cli/native.rs"]
@@ -85,6 +87,7 @@ mod renderer;
 mod session;
 #[path = "raw_cli/slash.rs"]
 mod slash;
+#[cfg(target_os = "linux")]
 #[path = "raw_cli/startup.rs"]
 mod startup;
 #[path = "support/mod.rs"]
@@ -92,11 +95,14 @@ mod support;
 #[path = "raw_cli/task.rs"]
 mod task;
 #[cfg(target_os = "linux")]
+#[cfg(target_os = "linux")]
 #[path = "raw_cli/terminal_ownership.rs"]
 mod terminal_ownership;
 #[cfg(target_os = "linux")]
+#[cfg(target_os = "linux")]
 #[path = "raw_cli/terminal_resize.rs"]
 mod terminal_resize;
+#[cfg(target_os = "linux")]
 #[cfg(target_os = "linux")]
 #[path = "raw_cli/terminal_unicode.rs"]
 mod terminal_unicode;
