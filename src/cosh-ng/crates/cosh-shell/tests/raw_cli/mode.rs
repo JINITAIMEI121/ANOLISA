@@ -597,6 +597,5 @@ fn raw_cli_auto_mode_trusted_command_requires_exact_match() {
 }
 
 #[cfg(target_os = "linux")]
-#[cfg(target_os = "linux")]
 #[path = "mode/routing_recovery.rs"]
 mod routing_recovery;
