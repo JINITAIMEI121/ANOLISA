@@ -61,7 +61,6 @@ mod i18n;
 mod log_budget;
 #[path = "raw_cli/memory_hook.rs"]
 mod memory_hook;
-#[cfg(target_os = "linux")]
 #[path = "raw_cli/mode.rs"]
 mod mode;
 #[path = "raw_cli/native.rs"]
@@ -86,7 +85,6 @@ mod renderer;
 mod session;
 #[path = "raw_cli/slash.rs"]
 mod slash;
-#[cfg(target_os = "linux")]
 #[path = "raw_cli/startup.rs"]
 mod startup;
 #[path = "support/mod.rs"]
